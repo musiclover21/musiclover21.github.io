@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        #container {
+            width: 400px;
+            height: 300px;
+            border: double ghostwhite;
+            position: relative;
+        }
+        
+        .item {
+            width: 200px;
+            height: 200px;
+            position: absolute
+        }
+        
+        #item1 {
+            background-color: lightcyan;
+            z-index: 9999999999999999;
+        }
+        
+        #item2 {
+            background-color: lightgoldenrodyellow;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="item1" class="item">Item1</div>
+        <div id="item2" class="item">Item2</div>
+    </div>
+</body>
+</html>

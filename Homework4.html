@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            color: cornflowerblue;
+            padding-left: 40px;
+            text-align: center;
+        }
+        
+        input {
+            width: 125px;
+        }
+        
+        .salad {
+            width: 20.2%
+        }
+        
+        .ppizza {
+            width: 22.5%
+        }
+        
+        .yzfr {
+            width: 20.8%
+        }
+        
+        .sushi {
+            width: 15.3%
+        }
+        
+        #radiogroup input {
+            width: 10px;
+        }
+        
+        button {
+            width: 120px;
+            height: 25px;
+        }
+        
+        fieldset {
+            border-color: cadetblue
+        }
+
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>My information</legend>
+        <select name="names" id="names">
+            <option value="Mr.">Mr.</option>
+            <option value="Ms.">Ms.</option>
+            <option value="Mrs.">Mrs.</option>
+        </select><br>
+        <label for="username">Name:&nbsp;&nbsp;</label>
+        <input id="username" type="text">
+        <br>
+        <label for="email">Email:&nbsp;&nbsp;</label>
+        <input id="email" type="email">
+        <br>
+        <label for="phone">Phone:&nbsp;</label>
+        <input id="phone" type="tel">
+        <br> City: <select name="cities" id="cities">
+            <option value="Brantford">Brantford</option>
+            <option value="Burlington">Burlington</option>
+            <option value="Cambridge">Cambridge</option>
+            <option value="Guelph">Guelph</option>
+            <option value="Hamilton">Hamilton</option>
+            <option value="Kingston">Kingston</option>
+            <option value="Kitchener">Kitchener</option>
+            <option value="London">London</option>
+            <option value="Markham">Maekham</option>
+            <option value="Mississauga">Mississauga</option>
+            <option value="Niagara Falls">Niagara Falls</option>
+            <option value="North Bay">North Bay</option>
+            <option value="Oshawa">Oshawa</option>
+            <option value="Ottawa">Ottawa</option>
+            <option value="Owen Sound">Owen Sound</option>
+            <option value="Peterborough">Peterborough</option>
+            <option value="Sarnia">Sarnia</option>
+            <option value="St.Catharines">St.Catharines</option>
+            <option value="St.Thomas">St.Thomas</option>
+            <option value="Stratford">Stratford</option>
+            <option value="Thunder Bay">Thunder Bay</option>
+            <option value="Toronto">Toronto</option>
+            <option value="Vaughan">Vaughan</option>
+            <option value="Waterloo">Waterloo</option>
+            <option value="Windsor">Windsor</option>
+            <option value="Woodstock">Woodstock</option>
+        </select>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Order Information</legend>
+        <input type="radio" name="salad" checked><img class="salad" src="http://www.saladbarmn.com/assets/img/slider/2.jpg" alt="Salad">
+        <input type="radio" name="pizza"><img class="ppizza" src="http://cdn2.uk.mentalfloss.com/sites/mentalflossuk/files/styles/16x9_620/public/3/39//new-york-pizza-the-perfect-pepperoni-slice.jpg?itok=B6qM4FqA" alt="Pepperoni Pizza">
+        <input type="radio" name="fried rice"><img class="yzfr" src="http://img01.cztv.com/201510/26/ffe58f5ec7d8fb917b26f6105b2c57cb.jpg" alt="Yang Zhou Fried Rice">
+        <input type="radio" name="sushi"><img class="sushi" src="http://cdn4.gurl.com/wp-content/uploads/2012/03/cute-food-sushi-totoro.jpg" alt="Sushi">
+        <br>
+        <p>People(1-4):</p><input min=1 max=4 type="range">
+        <br>
+        <label for="date">Date: &nbsp;&nbsp;</label>
+        <input id="date" type="date"><br>
+        <label for="time">Time: &nbsp;&nbsp;</label>
+        <input id="time" type="time"><br>
+        <div id="radiogroup">
+            <label for="">Master Card</label>
+            <input type="radio" name="payment info" checked>
+            <label for="">Visa Card</label>
+            <input type="radio" name="payment info">
+            <label for="">Paypal</label>
+            <input type="radio" name="payment info">
+        </div>
+    </fieldset>
+    <div class="center"></div>
+    <textarea name="comments" id="comments" cols="70" rows="15"></textarea><br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</body>
+
+</html>

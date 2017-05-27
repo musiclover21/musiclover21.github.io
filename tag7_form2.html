@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>input</title>
+    <style>
+        input {
+            width: 125px;
+        }
+        
+        #radiogroup input {
+            width: 20px;
+        }
+        
+        #checkboxgroup input {
+            width: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <form action="#">
+        <input type="text" placeholder="Your Name">
+
+        <br>
+        <input type="password" placeholder="Your Password">
+
+        <br>
+        <input type="hidden">
+
+        <br>
+        <input max=100 min=-100 type="number" placeholder="Number">
+
+        <br>
+        <input type="email" placeholder="Email">
+
+        <br>
+        <input type="url">
+
+        <br>
+        <input type="tel">
+
+        <br>
+        <input min=1 max=4 type="range">
+        <input type="text" id="rangeValue" onchange="updateTextInput(this.value)">
+
+        <br>
+        <input type="color">
+
+        <br>
+        <input type="file">
+
+        <br>
+        <input type="search">
+
+        <br>
+        <div id="radiogroup">
+            <label for="">Burger</label>
+            <input type="radio" name="food" checked>
+            <label for="">Salad</label>
+            <input type="radio" name="food">
+            <label for="">Sushi</label>
+            <input type="radio" name="food">
+        </div>
+
+        <div id="checkboxgroup">
+            <input type="checkbox">
+            <lable>Drink</lable>
+        </div>
+
+        <br>
+        <input type="submit">
+
+    </form>
+
+    <script>
+        function updateTextInput(val) {
+            document.getElementById('rangeValue').value = val;
+        }
+
+    </script>
+</body>
+
+</html>

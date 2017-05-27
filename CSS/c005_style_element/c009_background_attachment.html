@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+        
+        .container {
+            width: 400px;
+            height: 300px;
+            background-image: url(../../img/Jess_Drawing_4_Me.png);
+            background-repeat: no-repeat;
+            border: solid 2px slateblue;
+            overflow: auto;
+        }
+        
+        .expand {
+            height: 400px
+        }
+        
+        #scroll {
+            background-attachment: scroll;
+        }
+        
+        #local {
+            background-attachment: local;
+        }
+        
+        #fixed {
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Scroll: background-image scrolls along with the container</h2>
+    <div id="scroll" class="container">
+        <div class="expand"></div>
+    </div>
+    <h2>Local: background-image scrools along the local content</h2>
+    <div id="local" class="container">
+        <div class="expand"></div>
+    </div>
+    <h2>Fixed</h2>
+    <div id="fixed" class="container">
+        <div class="expand"></div>
+    </div>
+</body>
+</html>
