@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout by Inline-block</title>
+    <style>
+        body {
+            background-color: azure
+        }
+        
+        #page {
+            border: solid 1px;
+        }
+        
+        nav {
+            width: 23%;
+        }
+        
+        nav,
+        #content {
+            display: inline-block;
+        }
+        
+        #content {
+            width: 75%;
+            vertical-align: top;
+        }
+        
+        article {
+            height: 100px;
+            border: solid 1px;
+            width: 76%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page">
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        <div id="content">
+            <article>Just because my path is different doesn't mean I'm lost</article>
+            <article>Go where you feel mose alive.</article>
+            <article>Don't call it a dream, call it a plan.</article>
+        </div>
+    </div>
+</body>
+</html>

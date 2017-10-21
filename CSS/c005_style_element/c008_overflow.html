@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Overflow</title>
+    <style>
+        div {
+            width: 300px;
+            height: 100px;
+            border: double slateblue;
+            overflow: visible;
+        }
+        
+        #scroll {
+            width: 510px;
+            overflow: scroll;
+        }
+        
+        #auto {
+            width: 510px;
+            overflow: auto;
+        }
+        
+        ::-webkit-scrollbar {
+            -webkit-appearence: none;
+            width: 11px;
+            height: 21px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: rgba(137, 0, 255, 0.5)
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://d1yn1kh78jj1rr.cloudfront.net/preview/wings-vector-element_zyCHlhL__S.jpg" alt="">
+    </div>
+    <br>
+    <div id="scroll">
+        <img src="https://d1yn1kh78jj1rr.cloudfront.net/preview/wings-vector-element_zyCHlhL__S.jpg" alt="">
+    </div>
+    <br>
+    <div id="auto">
+        <img src="https://d1yn1kh78jj1rr.cloudfront.net/preview/wings-vector-element_zyCHlhL__S.jpg" alt="">
+    </div>
+</body>
+</html>

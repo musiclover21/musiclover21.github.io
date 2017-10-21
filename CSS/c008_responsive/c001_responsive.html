@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        button {
+            width: 24%;
+            background-color: lightcoral;
+            color: white;
+        }
+        
+        @media screen and (max-width: 445px) {
+            button {
+                display: block;
+                margin: 10px auto;
+                width: 200px;
+                height: 40px;
+            }
+        }
+        
+        @media screen and (min-width: 800px) {
+            button {
+                width: 185px;
+                background-color: lightpink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button>One</button>
+    <button>Two</button>
+    <button>Three</button>
+    <button>Four</button>
+</body>
+</html>

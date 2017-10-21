@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #words {
+            color: lightsalmon;
+        }
+        
+        div span {
+            color: red;
+        }
+        
+        div>p {
+            color: mistyrose;
+        }
+        
+        div {
+            color: green!important;
+        }
+        
+        .sentence {
+            color: black;
+        }
+        
+        [data] {
+            color: skyblue;
+        }
+        
+        li:first-child {
+            color: palevioletred;
+        }
+        
+        li:nth-child(2) {
+            color: orchid;
+        }
+        
+        li:last-child {
+            color: blueviolet
+        }
+        
+        #first_li {
+            color: palevioletred
+        }
+    </style>
+</head>
+
+<body>
+    <h2>!important > inline style > id > attr = class > tag</h2>
+    <h2>long path > short path</h2>
+    <h2>if css specificity is the same, the last one > the previous one</h2>
+    <div id="words" class="sentences" data="data">We're too young to give up. Let’s move. Goodbye to this place, that we grew attached to. Let’s move to a higher place.
+        <p>- <span>BTS</span> Forever Young</p>
+    </div>
+
+    <ul>
+        <li id="first_li" style="color:black">About</li>
+        <li>Blog</li>
+        <li>Team</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<style>
+	* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	#navbar {
+		padding: 20px 30px;
+		font-family: sans-serif;
+		
+		position: fixed;
+		width: 100%;
+		background-color: white;
+	}	
+	
+	#logo {
+		font-size: 20px;
+		letter-spacing: 1px;
+		font-weight: 600;
+	}
+	
+	nav {
+		margin-top: 3px;
+	}
+	
+	#logo, nav {
+		display: inline-block;
+	}
+	
+	nav li {
+		display: inline-block;
+	}
+	
+	nav li a {
+		margin-left: 20px;
+		text-decoration: none;
+		font-size: 16px;
+		color: grey;
+	}
+	
+	nav li a:hover {
+		color: black;
+	}
+	
+	nav {
+		position: absolute;
+		right: 30px;
+	}
+	
+/*	header */
+	header {
+		padding: 180px 100px;
+		padding-bottom: 100px;
+		text-align: center;
+		background-image: url(../../img/intro-bg.jpg);
+		background-size: cover;
+		color: white;
+	}
+	
+	#title, #subtitle, hr {
+		margin-bottom: 10px;
+	}	
+	
+	#btngroup a {
+		text-decoration: none;
+		color: white;
+		display: inline-block;
+		width: 80px;
+		padding: 20px 16px;
+		background-color: grey;
+	}
+	
+	hr {
+		width: 300px;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+</style>		
+</head>
+<body>
+	<div id="navbar">
+		<div id="logo">Start Bootstrap</div>
+		<nav>
+			<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+	<header>
+		<h1 id='title'>Landing Page</h1>
+		<h3 id="subtitle">A Template by Start Bootstrap</h3>
+		<hr>
+		<div id="btngroup">
+			<a href="#"><i class='fa fa-twitter'></i>Twitter</a>
+			<a href="#"><i class='fa fa-github'></i>Github</a>
+			<a href="#"><i class='fa fa-linkedin'></i>Linkedin</a>
+		</div>
+	</header>
+</body>
+</html>
