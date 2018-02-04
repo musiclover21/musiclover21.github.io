@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .clkbd {
+            height: 300px;
+            width: 300px;
+            background-color: #bfd1ce;
+            border-radius: 15%;
+
+            position: relative;
+            border: solid 14px #86a297;
+        }
+
+        .clkfc {
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            background-color: antiquewhite;
+            border: solid 7px #d9ccba;
+
+            position: absolute;
+            top: 9.2%;
+            left: 10%;
+        }
+        
+        .hand {
+            display: inline-block;
+            margin-left: 117px;
+
+            position: absolute;
+            bottom: 113px;
+            
+            animation-timing-function: steps(60, end);
+            transform-origin: bottom center;
+        }
+
+        .second {
+            width: 2px;
+            height: 97px;
+            left: 1px;
+            background-color: #6faaa8;
+            
+            animation: shm 60s linear infinite;
+            animation-timing-function: steps(60);
+            transform-origin: bottom center;
+        }
+
+        .minute {
+            width: 4px;
+            height: 93px;
+            background-color: #1d534c;
+            
+            animation: mhm 3600s linear infinite;
+            animation-timing-function: steps(60);
+            transform-origin: bottom center;
+        }
+
+        .hour {
+            width: 7px;
+            height: 67px;
+            left: -1.6px;
+            background-color: #1d534c;
+            
+            animation: hhm 43200s linear infinite;
+            transform-origin: bottom center;
+        }
+        
+        .dot {
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: #638969;
+            
+            position: absolute;
+            margin-left: 111px;
+            margin-top: 106px;
+        }
+        
+        @keyframes shm {
+            0% {
+                transform: rotateZ(0deg);
+            }
+            
+            100% {
+                transform: rotateZ(361deg);
+            }
+        }
+        
+        @keyframes mhm {
+            0% {
+                transform: rotateZ(0deg);
+            }
+            
+            100% {
+                transform: rotateZ(361deg);
+            }
+        }
+        
+        @keyframes hhm {
+            0% {
+                transform: rotateZ(0deg);
+            }
+            
+            100% {
+                transform: rotateZ(361deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clkbd">
+        <div class="clkfc">
+            <div class="second hand"></div>
+            <div class="minute hand"></div>
+            <div class="hour hand"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+</body>
+</html>

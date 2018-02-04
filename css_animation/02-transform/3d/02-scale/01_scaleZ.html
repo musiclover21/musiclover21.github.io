@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .surface {
+            width: 100px;
+            height: 100px;
+            border: double #7272ff;
+            margin-bottom: 200px;
+            margin-left: 200px;
+            
+            perspective: 400px;
+        }
+        
+        .panel {
+            width: 100px;
+            height: 100px;
+            background-color: #baefef;
+        }
+        
+        .first {
+            transform: translateZ(200px);
+        }
+        
+        .second {
+            transform: scaleZ(2.5) translateZ(100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="surface">
+        <div class="panel first"></div>
+    </div>
+    <div class="surface">
+        <div class="panel second"></div>
+    </div>
+</body>
+</html>

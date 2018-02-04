@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #c9e6dd;
+        }
+        
+        .con {
+            height: 205px;
+            width: 100px;
+        }
+
+        .top {
+            height: 5px;
+            width: 40px;
+            background-color: black;
+            margin-left: 30px;
+            animation: top 7s linear;
+        }
+
+        .bat {
+            height: 200px;
+            width: 100px;
+            border: solid 2px;
+            border-radius: 10px;
+            z-index: 3;
+            animation: bor 7s linear;
+        }
+
+        .ene {
+            height: 200.5px;
+            width: 100px;
+            background-color: #00ff00;
+            border-radius: 8px;
+            position: absolute;
+            z-index: 0;
+            animation: col 7s linear;
+            transition-delay: 2.3s;
+        }
+
+        .bla {
+            height: 0px;
+            width: 100px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            animation: mov 7s linear;
+            position: absolute;
+            background-color: #d8d8d8;
+            z-index: 1;
+        }
+
+        @keyframes top {
+            64.9% {
+                background-color: black;
+            }
+            65% {
+                background-color: red;
+            }
+            to {
+                background-color: red;
+            }
+        }
+
+        @keyframes bor {
+            64.9% {
+                border: solid 2px;
+            }
+            65% {
+                border: solid 2px red;
+            }
+            to {
+                border: solid 2px red:
+            }
+        }
+
+        @keyframes col {
+            64.9% {
+                background-color: #00ff00;
+            }
+            65% {
+                background-color: red;
+            }
+            to {
+                background-color: red;
+            }
+        }
+
+        @keyframes mov {
+            
+            0% {
+/*                transform: translateY(100px);*/
+
+            }
+
+            100% {
+/*                transform: translateY(300px);*/
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="top"></div>
+        <div class="bat">
+            <div class="bla"></div>
+            <div class="ene"></div>
+        </div>
+    </div>
+</body>
+</html>

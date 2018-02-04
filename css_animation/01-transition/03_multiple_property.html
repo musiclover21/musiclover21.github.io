@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiple Property</title>
+    <style>
+        .circle {
+            width: 200px;
+            height: 200px;
+            
+            background-color: #e6feff;
+            left: 0;
+            position: relative;
+            
+/*            transition: background-color 1s, border-radius 1s, left 1s;*/
+            transition: all 1s ease;
+        }
+        
+        body {
+            background-color: black;
+        }
+        
+        body:hover div {
+            left: 700px;
+            background-color: black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        img {
+            width: 350px;
+            border-radius: 50%
+        }
+        
+        @keyframes shake {
+            0% {
+                left: -20px;
+                border-right: solid 3px;
+            }
+            100% {
+                left: 20px;
+                border-left: solid 3px;
+            }
+        }
+        
+        img:hover {
+            animation-name: shake;
+            animation-duration: 0.07s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://farm5.staticflickr.com/4435/36903557966_0cfdd0d231_o.jpg" alt="">
+</body>
+</html>

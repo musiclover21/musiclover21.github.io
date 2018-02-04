@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        img {
+            width: 350px;
+            border-radius: 50%
+        }
+        
+        @keyframes direction {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(300px);
+            }
+        }
+        
+/*        "animation-direction: normal;" goes from 0 to 300 then SKIPS back to 0 to start again.*/
+/*        "animation-direction: alternate;" goes from 0 to 300 then goes from 300 to 0 with the same speed without skipping back to 0*/
+/*        "animation-direction: reverse;" goes from 300 to 0 then SKIPS back to 300 to start again*/
+/*        "animation-direction: alternate-reverse;" goes from 300 to 0 to 300 with the same speed*/
+        
+        img {
+            animation-name: direction;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            
+            animation-direction: normal;
+            animation-direction: alternate;
+            animation-direction: reverse;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://farm5.staticflickr.com/4435/36903557966_0cfdd0d231_o.jpg" alt="">
+</body>
+</html>

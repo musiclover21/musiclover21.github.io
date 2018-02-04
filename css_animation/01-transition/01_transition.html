@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01_transition</title>
+    <style>
+        .ball {
+            height: 200px;
+            width: 200px;
+            background-color: #d6ffff;
+            border-radius: 100%;
+            
+            position: relative;
+            left: 2px;
+            
+/*            transition: left 1s linear;*/
+            -webkit-transition-property: left;
+            -moz-transition-property: left;
+            -ms-transition-property: left;
+            -o-transition-property: left;
+            transition-duration: 1s;
+            transition-timing-function: linear;
+        }
+        
+        body {
+            border: solid 1px white
+        }
+        
+        body:hover div {
+            left: 300px;
+        }
+        
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

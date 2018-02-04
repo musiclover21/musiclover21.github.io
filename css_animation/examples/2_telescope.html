@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Telescope</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        img {
+            height: 100%;
+            position: absolute;
+/*
+            left: 0;
+            animation: move 3s infinite;
+*/
+        }
+        
+        .tlscp {
+/*
+            margin-left: 200px;
+            margin-top: 120px;
+*/
+            width: 240px;
+            height: 240px;
+            position: absolute;
+            border-radius: 50%;
+            border: solid 2px;
+            overflow: auto;
+            left: 0;
+            animation: move 3s infinite;
+        }
+        
+        @keyframes move {
+            from {
+                left: 0;
+            }
+            
+            to {
+                left: 320px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tlscp">
+        <img src="http://cache.house.sina.com.cn/citylifehouse/citylife/9e/9d/20090606_21955_1.jpg" alt="">
+    </div>
+</body>
+</html>

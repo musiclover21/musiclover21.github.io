@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        img {
+            width: 350px;
+            border-radius: 50%
+        }
+        
+        @keyframes direction {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(70vw);
+            }
+        }
+        
+        img {
+            animation-name: direction;
+            animation-duration: 1s;
+            animation-iteration-count: 1.5;
+            animation-timing-function: linear;
+            
+            animation-direction: alternate;
+        }
+        
+        img:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://farm5.staticflickr.com/4435/36903557966_0cfdd0d231_o.jpg" alt="">
+</body>
+</html>

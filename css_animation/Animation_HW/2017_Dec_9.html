@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .container {
+            width: 900px;
+
+            perspective: 1500px;
+            transform-style: preserve-3d;
+            margin: auto;
+            margin-top: 53px;
+            transform-style: preserve-3d;
+            
+            animation-name: rotate;
+            animation-duration: 10000000s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .container div {
+            width: 300px;
+            position: absolute;
+
+            border: solid 1px;
+            box-shadow: inset 0px 0px 20px;
+            transform-origin: right;
+        }
+
+        .first {}
+
+        .second {
+            transform: rotateY(72deg);
+        }
+
+        .third {
+            transform: rotateY(144deg);
+        }
+
+        .fourth {
+            transform: rotateY(-144deg);
+        }
+
+        .fifth {
+            transform: rotateY(-72deg);
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        
+        @keyframes rotate {
+            0% {
+                transform: translateY(0deg);
+            }
+            
+            100% {
+                transform: translateY(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="first"><img src="http://i1.jpopasia.com/albums/3/49075-andltahrefhttpwwwjpo-enfd.jpg" alt=""></div>
+        <div class="second"><img src="https://images-na.ssl-images-amazon.com/images/I/61B5OKFgtnL._SS500.jpg" alt=""></div>
+        <div class="third"><img src="http://bts.ibighit.com/skoolluvaffair/img/cover-cropped.jpg" alt=""></div>
+        <div class="fourth"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/BTS%2C_Wings.jpg/220px-BTS%2C_Wings.jpg" alt=""></div>
+        <div class="fifth"><img src="https://0.soompi.io/wp-content/uploads/2017/09/12080213/bts-love-yourself-track-list-2.jpg" alt=""></div>
+    </div>
+</body>
+
+</html>

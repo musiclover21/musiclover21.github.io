@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #stage {
+            perspective: 1200px;
+            padding-left: 220px;
+			margin-top: 50px;
+        }
+        
+        #spinner {
+            transform-style: preserve-3d;
+            transform-origin: 180px 0;
+        }
+        
+        #spinner img {
+            position: absolute;
+            border: 1px solid #ccc;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+            width: 200px;
+            height: 160px;
+        }
+        
+        #one {
+/*            display:none;*/
+            transform: rotateY(0deg) translateX(180px); 
+			padding-left: 160px; 
+        }
+        #two {
+/*            display:none;*/
+            transform: rotateY(-72deg) translateX(180px); padding: 0 0 0 160px; 
+        }
+        #three {
+/*            display:none;*/
+            transform: rotateY(-144deg) translateX(180px); padding: 0 0 0 160px; 
+        }
+        #four {
+/*            display:none;*/
+            transform: rotateY(-216deg) translateX(180px); padding: 0 0 0 160px;
+        }
+        #five {
+/*            display:none;*/
+            transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 160px;
+        }
+        
+        @keyframes spinner {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(-360deg);
+            }
+        }
+        
+        #spinner {
+            animation-name: spinner;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+			
+            animation-duration: 5s;
+        }
+        
+        #spinner:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="stage">
+        <div id="spinner">
+            <img id="one" src="http://i1.jpopasia.com/albums/3/49075-andltahrefhttpwwwjpo-enfd.jpg" width="200" height="160" alt="">
+            
+            <img id="two" src="https://images-na.ssl-images-amazon.com/images/I/61B5OKFgtnL._SS500.jpg" width="213" height="160" alt="">
+            
+            <img id="three" src="http://bts.ibighit.com/skoolluvaffair/img/cover-cropped.jpg" width="240" height="160" alt="">
+            
+            <img id="four"  src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/BTS%2C_Wings.jpg/220px-BTS%2C_Wings.jpg" width="213" height="160" alt="">
+            
+            <img id="five"  src="https://0.soompi.io/wp-content/uploads/2017/09/12080213/bts-love-yourself-track-list-2.jpg" width="238" height="160" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
+
+

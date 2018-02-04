@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .lg {
+            height: 350px;
+            width: 190px;
+            background-color: #d1d1d1;
+            position: relative;
+            border-radius: 24px;
+            border: solid 2px;
+        }
+        
+        .lt {
+            height: 150px;
+            width: 150px;
+            margin-left: 20px;
+            border-radius: 51%;
+            position: relative;
+            
+            transition: 1s;
+        }
+            
+        .yl {
+            background-color: #ffff34;
+            margin-top: 10px;
+        }
+        
+        .grn {
+/*            background-color: #62e843;*/
+            margin-top: 20px;
+            background-color: gray;
+        }
+        
+        .lg:hover .yl{
+            background-color: gray;
+        }
+        
+        .lg:hover .grn{
+            background-color: #62e843;
+        }
+    </style>
+</head>
+<body>
+    <div class="lg">
+        <div class="lt yl"></div>
+        <div class="lt grn"></div>
+    </div>
+</body>
+</html>

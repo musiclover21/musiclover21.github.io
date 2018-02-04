@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rotate</title>
+    <style>
+        .container {
+            width: 309px;
+            perspective: 400px;
+        }
+        
+        .rotate {
+            width: 100px;
+            height: 200px;
+            background-color: #badbcb;
+            color: #548860;
+            font-size: 2em;
+
+            display: inline-block;
+            
+            transition: 1s;
+        }
+
+        /*        changes whole grid system; does not revolve around the x axis*/
+
+        .rotate1 {
+            transform: rotateX(45deg);
+            transform-origin: bottom;
+        }
+        
+        .rotate2 {
+            transform: rotateY(45deg);
+            transform-origin: left;
+        }
+        
+        .rotate3 {
+            transform: rotateZ(45deg);
+            transform-origin: top;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="rotate rotate1">X</div>
+        <div class="rotate rotate2">Y</div>
+        <div class="rotate rotate3">Z</div>
+    </div>
+</body>
+</html>

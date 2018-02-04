@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Perspective Origin</title>
+    <style>
+/*        perspective is like setting a vanishing point*/
+        #surface {
+            width: 500px;
+            height: 400px;
+            
+            border: double;
+            
+            perspective: 0.0001px;
+            perspective-origin: top;
+        }
+        
+/*        if on panel itself, perspective and perspective-origin will not work aka will vanish*/
+        #panel {
+            width: 200px;
+            height: 200px;
+            
+            background: #d2e3c9;
+            font-size: 4em;
+            color: #3d7c67;
+            text-align: center;
+            margin: auto;
+            
+            transform-origin: bottom;
+            transform: rotateX(90deg)
+        }
+    </style>
+</head>
+<body>
+    <div id="surface">
+        <div id="panel">^Dog^</div>
+    </div>
+</body>
+</html>

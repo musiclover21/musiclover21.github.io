@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .overlay {
+            height: 500px;
+            width: 800px;
+            background-color: rgba(2, 0, 0, 0.97);
+            position: relative;
+            z-index: 50;
+            transition: 5s;
+        }
+
+        .container {
+            position: absolute;
+            z-index: 1;
+        }
+
+        .sky {
+            height: 500px;
+            width: 800px;
+            background-color: #cfeeff;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .grass {
+            height: 161px;
+            width: 800px;
+            position: absolute;
+            bottom: 0;
+            background-color: #71ffad;
+            z-index: 1;
+        }
+
+        .mtone {
+            width: 0;
+            height: 0;
+            border-left: 95px solid transparent;
+            border-right: 95px solid transparent;
+            border-bottom: 130px solid #6d6dff;
+
+            position: absolute;
+            left: 169px;
+            bottom: 161px;
+            z-index: 1;
+        }
+
+        .mttwo {
+            width: 0;
+            height: 0;
+            border-left: 150px solid transparent;
+            border-right: 150px solid transparent;
+            border-bottom: 210px solid #6d6dff;
+
+            position: absolute;
+            right: 142px;
+            bottom: 161px;
+        }
+
+
+        .cloud {
+            height: 24%;
+            position: absolute;
+            top: 2px;
+        }
+
+        .sun {
+            width: 110px;
+            height: 110px;
+            background-color: #fff723;
+            border-radius: 50%;
+
+            position: absolute;
+            bottom: 50px;
+            left: 5px;
+            transition: 3s;
+            transition-delay: 1s;
+        }
+
+        body:hover .sun {
+            transform: translate(320px, -260px)
+        }
+
+        body:hover .overlay {
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sky">
+            <div class="mtone"></div>
+            <div class="mttwo"></div>
+            <div class="grass"></div>
+            <div class="sun"></div>
+            <img class="cloud" src="http://moziru.com/images/fluffy-clipart-cloud-transparent-20.png" alt="">
+        </div>
+    </div>
+    <div class="overlay"></div>
+</body>
+
+</html>

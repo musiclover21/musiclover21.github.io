@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+        
+        img {
+            width:100%;
+        }
+        
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        ul li a {
+            text-decoration: none;
+            border: double black;
+            display: block;
+        }
+        
+        ul li div {
+            height: 0;
+            overflow: hidden;
+            transition: all 1s;
+        }
+        
+        a:target+div {
+            height: 257px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a id="item1" href="#item1">Item 1</a>
+            <div>
+                <img src="/img/firework.jpg" alt="">
+            </div>
+        </li>
+        <li>
+            <a id="item2" href="#item2">Item 2</a>
+            <div>
+                <img src="/img/firework_cool.jpg" alt="">
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

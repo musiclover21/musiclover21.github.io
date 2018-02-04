@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .tab a {
+            text-decoration: none;
+            font-size: 33px;
+        }
+        
+        .tab {
+            text-align: center;
+        }
+        
+        .tab img {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            transition: all 1s;
+        }
+        
+        div:target img {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <a href="#one">I</a>
+        <a href="#two">II</a>
+        <a href="#three">III</a>
+        
+        <div id="one">
+            <img src="/img/BTS_Spring_Day_4.jpg" alt="">
+        </div>
+        <div id="two">
+            <img src="/img/BTS_Spring_Day_5.jpg" alt="">
+        </div>
+        <div id="three">
+            <img src="/img/BTS_Spring_Day_6.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example Album</title>
+    <style>
+        img {
+            width: 230px;
+            box-shadow: 13px 10px 12px #808080
+        }
+
+        .album {
+            display: inline-block;
+            transform: perspective(100px) rotateY(-5deg);
+            
+            margin-right: 45px;
+            margin-top: 50px;
+        }
+        
+        .album:before {
+            content: 'BTS';
+            width: 18px;
+            height: 96%;
+            background-color: #b6c4db;
+            
+            position: absolute;
+            top: 2px;
+            left: 100%;
+            
+            transform-origin: left;
+            transform: perspective(100px) rotateY(24deg);
+            
+            box-shadow: inset 3px 0 16px #767676;
+        }
+        
+        .album:after {
+            content: 'album back';
+            width: 230px;
+            height: 91%;
+            background-color: #3666b4;
+            
+            position: absolute;
+            z-index: -1;
+            top: 8px;
+            left: 8%;
+            
+            box-shadow: 8px 13px 13px #808080;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="surface">
+        <div class="album" id="album3"><img src="http://i.imgur.com/7jsxVDR.jpg" alt=""></div>
+        <div class="album" id="album1"><img src="http://www.sbs.com.au/popasia/sites/sbs.com.au.popasia/files/styles/body_image/public/bts-wings-cover.jpg?itok=Pvbe9VrN&mtime=1475706454" alt=""></div>
+        <div class="album" id="album2"><img src="https://btsdiary.files.wordpress.com/2014/07/2653551_org.jpg" alt=""></div>
+    </div>
+</body>
+</html>
